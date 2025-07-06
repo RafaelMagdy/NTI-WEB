@@ -1,25 +1,36 @@
-# Web1
-<!DOCTYPE html>
-<html>
-    <head> 
-        <title>Web 1</title>
-         <link rel="stylesheet" href="./Web.css">
-    </head>
-<body>
-    <div>
-            <h1 class="a1"> Sign In </h1>
-            <h3 class="a2">Unlock you World</h3>
-            <img class="Jerry" src="./Jerry_Mouse-removebg-preview.png">
-        <form class="move">
-            <label  for="email">Email:</label><br>
-            <input  type="email" id="email" name="email" required><br><br>
+body{
+    background-color: rgb(219, 234, 254);}
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+    div {
+     border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+    }
 
-            <button class="b1" type="submit1" value="Sign in">Sign in</button><br><br>
-            <button class="b2" type="submit2" value="Create an account">Create an account</button>
-        </form>
-    </div>
-</body>
-</html>
+form {
+  display:block;
+  width: 100px;
+  height: 200px;
+  transform: translate(500px, -300px);
+}
+.b1{
+  background-color: hsla(244, 100%, 50%, 0.308);
+  border-radius: 20px;
+  transform: translate(100px, 100px);
+}
+.b2{
+        background-color: rgba(4, 0, 255, 0.5);
+        border-radius: 20px;
+        transform: translate(80px, 100px);
+}
+.Jerry{
+  transform: translate(100px, 50px);
+}
+.a1{
+  transform: translate(500px, 50px);
+
+}
+
+.a2{
+  transform: translate(500px, 50px);
+
+}
