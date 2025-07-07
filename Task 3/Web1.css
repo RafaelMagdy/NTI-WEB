@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(219, 234, 254);}
+
+    div {
+     border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+    }
+
+form {
+  display:block;
+  width: 100px;
+  height: 200px;
+  transform: translate(500px, -300px);
+}
+.b1{
+  background-color: hsla(244, 100%, 50%, 0.308);
+  border-radius: 20px;
+  transform: translate(100px, 100px);
+}
+.b2{
+        background-color: rgba(4, 0, 255, 0.5);
+        border-radius: 20px;
+        transform: translate(-50px, 50px);
+}
+.Jerry{
+  transform: translate(500px, 50px);
+}
+.a1{
+  transform: translate(100px, 50px);
+
+}
+
+.a2{
+  transform: translate(100px, 50px);
+
+}
+.u1 {
+        background-color: rgba(4, 0, 255, 0.5);
+        border-radius: 20px;
+        
+}
+.d1{
+        background-color: rgba(255, 0, 0, 0.247);
+        border-radius: 20px;
+}
+.d2{
+        background-color: rgba(255, 0, 0, 0.247);
+        border-radius: 20px;
+}
+.d3{
+        background-color: rgba(255, 0, 0, 0.247);
+        border-radius: 20px;
+}
+.d4{
+        background-color: rgba(255, 0, 0, 0.247);
+        border-radius: 20px;
+}
+.a3{
+    transform: translate(100px, 50px);
+}
+.p1{ 
+    transform: translate(100px, 50px);
+}
