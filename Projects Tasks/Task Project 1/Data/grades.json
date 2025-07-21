@@ -1,0 +1,27 @@
+[
+  {
+    "id": "S001",
+    "name": "Alice Smith",
+    "grades": [
+      {"course": "Math", "score": 92},
+      {"course": "Science", "score": 88},
+      {"course": "History", "score": 95}
+    ]
+  },
+  {
+    "id": "S002",
+    "name": "Bob Johnson",
+    "grades": [
+      {"course": "Math", "score": 78},
+      {"course": "English", "score": 85}
+    ]
+  },
+  {
+    "id": "S003",
+    "name": "Charlie Brown",
+    "grades": [
+      {"course": "Science", "score": 70},
+      {"course": "Art", "score": 90}
+    ]
+  }
+]

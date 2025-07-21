@@ -1,0 +1,23 @@
+[
+  {
+    "id": "E001",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "position": "Software Engineer",
+    "salary": 90000
+  },
+  {
+    "id": "E002",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "position": "Project Manager",
+    "salary": 110000
+  },
+  {
+    "id": "E003",
+    "firstName": "Charlie",
+    "lastName": "Brown",
+    "position": "HR Specialist",
+    "salary": 70000
+  }
+]

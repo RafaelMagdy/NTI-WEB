@@ -1,0 +1,30 @@
+[
+  {
+    "id": "M001",
+    "name": "Margherita Pizza",
+    "category": "Pizza",
+    "price": 15.99,
+    "availability": true
+  },
+  {
+    "id": "M002",
+    "name": "Caesar Salad",
+    "category": "Appetizer",
+    "price": 8.50,
+    "availability": true
+  },
+  {
+    "id": "M003",
+    "name": "Spaghetti Carbonara",
+    "category": "Pasta",
+    "price": 18.25,
+    "availability": false
+  },
+  {
+    "id": "M004",
+    "name": "Chocolate Lava Cake",
+    "category": "Dessert",
+    "price": 7.00,
+    "availability": true
+  }
+]
