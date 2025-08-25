@@ -1,0 +1,64 @@
+<div class="form-container">
+    <h2>Sign Up</h2>
+    
+    <form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+      
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="newUser.name" required #name="ngModel">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">Name is required.</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="newUser.email" required email #email="ngModel">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+          <div *ngIf="email.errors?.['required']">Email is required.</div>
+          <div *ngIf="email.errors?.['email']">Enter a valid email address.</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="photo">Photo URL</label>
+        <input type="url" id="photo" name="photo" [(ngModel)]="newUser.photo">
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="newUser.password" required minlength="6" #password="ngModel">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+          <div *ngIf="password.errors?.['required']">Password is required.</div>
+          <div *ngIf="password.errors?.['minlength']">Min 6 characters.</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="newUser.confirmPassword" required #cPassword="ngModel">
+        <div *ngIf="newUser.password !== newUser.confirmPassword && cPassword.dirty" class="error-message">Passwords do not match.</div>
+      </div>
+  
+      <hr>
+      <h4>Additional Fields</h4>
+  
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" [(ngModel)]="newUser.phone">
+      </div>
+  
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" [(ngModel)]="newUser.gender">
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div *ngIf="successMessage" class="success-alert">{{ successMessage }}</div>
+      <div *ngIf="errorMessage" class="error-alert">{{ errorMessage }}</div>
+  
+      <button type="submit" [disabled]="!signUpForm.valid || newUser.password !== newUser.confirmPassword">Sign Up</button>
+    </form>
+  </div>
